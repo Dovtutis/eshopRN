@@ -6,12 +6,14 @@ import * as Font from "expo-font";
 import { useFonts }  from 'expo-font';
 
 import productsReducer from "./store/reducers/products";
+import ordersReducer from './store/reducers/orders';
 import cartReducer from './store/reducers/cart';
 import ShopNavigator from "./navigation/ShopNavigator";
 
 const rootReducer = combineReducers({
   products: productsReducer,
-  cart: cartReducer
+  cart: cartReducer,
+  orders: ordersReducer
 });
 
 // const fetchFonts = () => {
