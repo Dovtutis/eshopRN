@@ -4,7 +4,7 @@ const PRODUCTS = [
   new Product(
     'p1',
     'u1',
-    'Super Mario 3D World + Bowser\'s Fury',
+    'Super Mario 3D World',
     'https://gameroom.lt/34814/super-mario-3d-world-bowser-s-fury.jpg',
     'The cat’s out of the bag—Super Mario™ 3D World is coming to the Nintendo Switch™ system! Pounce and climb through dozens of colorful stages! Mario (and his friends) '
     +  'can use power-ups like the Super Bell, which grants catlike abilities, like climbing and scratching. Work together locally* or online** with up to three other players to reach the goal…and to see who can get a high score.',
