@@ -24,7 +24,7 @@ const CartItem = (props) => {
           >
             <Ionicons
               name={Platform.OS === "android" ? "md-trash" : "ios-trash"}
-              size={23}
+              size={21}
               color="red"
             />
           </TouchableOpacity>
@@ -49,11 +49,11 @@ const styles = StyleSheet.create({
   quantity: {
     fontFamily: "open-sans",
     color: "#888",
-    fontSize: 16,
+    fontSize: 14,
   },
   mainText: {
     fontFamily: "open-sans-bold",
-    fontSize: 16,
+    fontSize: 12,
   },
   deleteButton: {
     marginLeft: 20,
