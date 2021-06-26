@@ -1,6 +1,6 @@
 # React Native Eshop.
 
-React Native Eshop is a application where you can browse through different items which are for sale, check them in detail, add to cart and order. This task was from Udemy REACT Native course. It was created by using React Native (Expo).
+React Native Eshop is a application where you can browse through different items which are for sale, check them in detail, add to cart and order. User can add new products and edit them. This task was from Udemy REACT Native course. It was created by using React Native (Expo).
 
 Tasks and funcionalities which were accomplished/used in this project:
 - Usage of variable React Native components, like: Text, View, TextInput, Button, FlatList, ScrollView, Image, StyleSheet.
