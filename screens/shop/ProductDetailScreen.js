@@ -37,7 +37,7 @@ const ProductDetailScreen = (props) => {
             color={Colors.primary}
             title="Add to Cart"
             onPress={() => {
-                dispatch.addToCart(selectedProduct);
+              dispatch(cartActions.addToCart(selectedProduct));
             }}
           />
         </View>
