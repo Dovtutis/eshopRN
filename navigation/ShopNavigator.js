@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import { createDrawerNavigator } from "react-navigation-drawer";
@@ -9,23 +9,21 @@ import ProductsOverviewScreen from "../screens/shop/ProductsOverviewScreen";
 import ProductDetailScreen from "../screens/shop/ProductDetailScreen";
 import CartScreen from "../screens/shop/CartScreen";
 import OrdersScreen from "../screens/shop/OrdersScreen";
-import UserProductsScreen from '../screens/user/UserProductsScreen';
-import EditProductScreen from '../screens/user/EditProductScreen';
+import UserProductsScreen from "../screens/user/UserProductsScreen";
+import EditProductScreen from "../screens/user/EditProductScreen";
 import Colors from "../constants/Colors";
 
 const defaultNavOptions = {
-  defaultNavigationOptions: {
-    headerStyle: {
-      backgroundColor: Platform.OS === "android" ? Colors.primary : "",
-    },
-    headerTitleStyle: {
-      fontFamily: "open-sans-bold",
-    },
-    headerBackTitleStyle: {
-      fontFamily: "open-sans",
-    },
-    headerTintColor: Platform.OS === "android" ? "#fff" : Colors.PRimary,
+  headerStyle: {
+    backgroundColor: Platform.OS === "android" ? Colors.primary : "",
   },
+  headerTitleStyle: {
+    fontFamily: "open-sans-bold",
+  },
+  headerBackTitleStyle: {
+    fontFamily: "open-sans",
+  },
+  headerTintColor: Platform.OS === "android" ? "white" : Colors.primary,
 };
 
 const ProductsNavigator = createStackNavigator(
@@ -69,7 +67,7 @@ const OrdersNavigator = createStackNavigator(
 const AdminNavigator = createStackNavigator(
   {
     UserProducts: UserProductsScreen,
-    EditProduct: EditProductScreen
+    EditProduct: EditProductScreen,
   },
   {
     navigationOptions: {
@@ -89,7 +87,7 @@ const ShopNavigator = createDrawerNavigator(
   {
     Products: ProductsNavigator,
     Orders: OrdersNavigator,
-    Admin: AdminNavigator
+    Admin: AdminNavigator,
   },
   {
     contentOptions: {
