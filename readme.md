@@ -12,7 +12,7 @@ Tasks and funcionalities which were accomplished/used in this project:
 - Redux.
 - State reducer.
 - Firebase database.
-- User registration and login system.
+- User registration and login system with firebase token.
 - Redux Thunk.
 - Error handling.
 - Pull refresh.
