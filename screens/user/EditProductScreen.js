@@ -85,6 +85,7 @@ const EditProductScreen = (props) => {
     setError(null);
     setIsLoading(true);
     try {
+      const price = formState.inputValues.price.replace(/,/g, '.');
       if (editedProduct) {
         await dispatch(
           productsActions.updateProduct(
@@ -92,7 +93,7 @@ const EditProductScreen = (props) => {
             formState.inputValues.title,
             formState.inputValues.description,
             formState.inputValues.imageUrl,
-            +formState.inputValues.price
+            +price
           )
         );
       } else {
@@ -101,7 +102,7 @@ const EditProductScreen = (props) => {
             formState.inputValues.title,
             formState.inputValues.description,
             formState.inputValues.imageUrl,
-            +formState.inputValues.price
+            +price
           )
         );
       }
@@ -172,7 +173,7 @@ const EditProductScreen = (props) => {
             id="price"
             label="Price"
             errorText="Please enter a valid price!"
-            keyboardType="default"
+            keyboardType="decimal-pad"
             returnKeyType="next"
             onInputChange={inputChangeHandler}
             initialValue={editedProduct ? editedProduct.price.toString() : ""}

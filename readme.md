@@ -15,3 +15,4 @@ Tasks and funcionalities which were accomplished/used in this project:
 - User registration and login system.
 - Redux Thunk.
 - Error handling.
+- Pull refresh.
