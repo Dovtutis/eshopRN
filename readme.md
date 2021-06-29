@@ -15,5 +15,6 @@ Tasks and funcionalities which were accomplished/used in this project:
 - State reducer.
 - Firebase database.
 - User registration and login system with firebase token.
+- Auto login with AsyncStorage.
 - Error handling.
 - Pull refresh.
