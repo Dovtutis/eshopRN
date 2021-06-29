@@ -9,10 +9,11 @@ Tasks and funcionalities which were accomplished/used in this project:
 - Custom google fonts were imported.
 - Design changes depending on device OS.
 - Input validation.
+- React navigation.
 - Redux.
+- Redux Thunk.
 - State reducer.
 - Firebase database.
 - User registration and login system with firebase token.
-- Redux Thunk.
 - Error handling.
 - Pull refresh.

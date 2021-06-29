@@ -4,6 +4,7 @@ import {
   Platform,
   ActivityIndicator,
   View,
+  Text,
   StyleSheet,
 } from "react-native";
 import { useSelector, useDispatch } from "react-redux";
@@ -35,6 +36,15 @@ const OrdersScreen = (props) => {
       </View>
     );
   }
+
+  if (orders.length === 0) {
+    return (
+      <View style={styles.textContainer}>
+        <Text>There are no orders! Start making them.</Text>
+      </View>
+    );
+  }
+
 
   return (
     <FlatList
@@ -73,6 +83,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  textContainer: {
+    flex: 1,
+     justifyContent: 'center',
+     alignItems: 'center'
   }
 });
 
