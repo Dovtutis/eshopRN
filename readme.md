@@ -16,5 +16,6 @@ Tasks and funcionalities which were accomplished/used in this project:
 - Firebase database.
 - User registration and login system with firebase token.
 - Auto login with AsyncStorage.
+- Auto logout after token expires.
 - Error handling.
 - Pull refresh.
